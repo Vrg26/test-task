@@ -1,7 +1,8 @@
 .calendar {
     background-color: #FFF;
     box-shadow: 2px 5px 10px 0 rgba(202, 200, 200, 0.5);
-    max-width: 300px;
+    max-width: 220px;
+    margin-top: 20px;
     width: 100%;
     color: #404040;
     padding: 20px 15px 10px;
@@ -13,7 +14,7 @@
     justify-content: space-between;
 }
 .calendar__body {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .calendar__date-info {
@@ -72,14 +73,9 @@
 .calendar__day {
     text-align: center;
     font-size: 0.8em;
-    color: rgba(204,204,204,0.6);
-    line-height: 3em;
+    line-height: 2.2em;
     border-radius: 10px;
     animation: to-top 1s forwards;
-}
-
-.calendar__day_active {
-    color: #404040;
 }
 
 .calendar__year-picker_less .calendar__button-content{

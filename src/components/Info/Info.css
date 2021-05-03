@@ -5,11 +5,11 @@
 
 .info__image {
     object-fit: cover;
-    width: 43%;
+    width: 40%;
 }
 
 .info__text-container {
-    padding: 40px;
+    padding: 40px 40px 40px 20px;
 }
 
 .info__title {
@@ -20,7 +20,7 @@
     font-size: 35px;
     text-transform: uppercase;
     padding: 0 13px 0 53px;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     color: #fff;
     background-color: #6f45e0;
 }
