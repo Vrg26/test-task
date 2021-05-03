@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Proxima';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/proxima_nova_condensed_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/proxima_nova_condensed_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/proxima_nova_condensed_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/proxima_nova_condensed_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/proxima_nova_condensed_regular.ttf') format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+	font-family: 'Proxima';
+	src: local('Proxima Nova Extrabold'), local('Proxima-Nova-Extrabold'),
+	url('./fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+	url('./fonts/ProximaNova-Extrabld.woff') format('woff'),
+	url('./fonts/ProximaNova-Extrabld.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
