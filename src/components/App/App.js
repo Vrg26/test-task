@@ -1,9 +1,14 @@
 import './App.css';
+import {Header} from "../Header";
+import {CalendarList} from "../CalendarList";
+import {Info} from "../Info";
 
 function App() {
   return (
     <div className="App">
-      hello
+      <Header/>
+      <CalendarList/>
+      <Info/>
     </div>
   );
 }
