@@ -1,0 +1,108 @@
+.calendar {
+    background-color: #FFF;
+    box-shadow: 2px 5px 20px 5px #e8e8e8;
+    max-width: 300px;
+    width: 100%;
+    color: #404040;
+    padding: 20px 15px 10px;
+    transition: background-color .3s ease, color .3s ease;
+}
+.calendar__header {
+    display: flex;
+    text-transform: lowercase;
+    justify-content: space-between;
+}
+.calendar__body {
+    margin-top: 25px;
+}
+
+.calendar__date-info {
+    margin: 0;
+    text-align: center;
+    flex-grow: 0.7;
+}
+
+.calendar__button {
+    border: none;
+    padding: 0 5px 0 5px;
+    background: none;
+}
+
+
+.calendar__year-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar__button-content {
+    position: relative;
+    padding: 0;
+    width: 5px;
+    height: 5px;
+    border-bottom:1px solid #404040;
+    border-right:1px solid #404040;
+    transition: border .2s ease;
+}
+
+.calendar__button:hover .calendar__button-content  {
+    border-bottom:1px solid #789bcb;;
+    border-right:1px solid #789bcb;;
+}
+
+.calendar__week-day-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+}
+
+.calendar__week-day-item {
+    text-align: center;
+    font-size: 14px;
+}
+
+.calendar__days {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+}
+.calendar__day {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(204,204,204,0.6);
+    line-height: 3em;
+    border-radius: 10px;
+    animation: to-top 1s forwards;
+}
+
+.calendar__day_active {
+    color: #404040;
+}
+
+.calendar__year-picker_less .calendar__button-content{
+    transform: rotate(135deg);
+}
+.calendar__month-picker_less .calendar__button-content{
+    transform: rotate(135deg);
+}
+
+.calendar__year-picker_more .calendar__button-content {
+    transform: rotate(315deg);
+}
+.calendar__month-picker_more .calendar__button-content {
+    transform: rotate(315deg);
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
