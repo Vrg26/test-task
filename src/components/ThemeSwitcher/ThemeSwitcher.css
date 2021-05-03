@@ -1,0 +1,109 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.theme-switcher {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 20px;
+}
+
+.theme-switcher__box {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #9ee3fb;
+    border: 2px solid #86c3d7;
+    transition: All .3s ease;
+}
+
+.theme-switcher__box-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #e1c348;
+    border-radius: 50%;
+    background-color: #f6f69a;
+    transition: all .3s ease;
+}
+.theme-switcher__box-toggle:before{
+    content: "";
+    top: 1px;
+    left: 1px;
+    width: 1px;
+    height: 1px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+
+    box-shadow:
+            -5px 10px 0 2px #fff,
+            -3px 10px 0 2px #fff,
+            -1px 10px 0 2px #fff,
+            2px 10px 0 2px #fff,
+            -2px 7px 0 2px #fff,
+            -5px 10px 0 3px #e5e5e5,
+            -3px 10px 0 3px #e5e5e5,
+            -1px 10px 0 3px #e5e5e5,
+            2px 10px 0 3px #e5e5e5,
+            -2px 7px 0 3px #e5e5e5;
+    position: absolute;
+
+    transition: all .3s ease;
+}
+
+
+.theme-switcher__input:checked + .theme-switcher__box {
+    background-color: #3c4145;
+    border: 2px solid #111;
+}
+
+.theme-switcher__input:checked + .theme-switcher__box .theme-switcher__box-toggle{
+    background-color: #fff;
+    right: 20px;
+    border: 2px solid #e3e3c7;
+}
+.theme-switcher__input:checked + .theme-switcher__box .theme-switcher__box-toggle:before {
+    box-shadow:
+            11px 3px 0 3px #e3e3c7,
+            2px 3px 0 1px #e3e3c7,
+            10px 11px 0 2px #e3e3c7;
+}
+
+.theme-switcher__input:checked + .theme-switcher__box:before {
+    content: "";
+    top: 5px;
+    left: 5px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
+
+    box-shadow:
+            15px -2px 0 0 #e5e5e5,
+            25px 0 0 0 #7c7c7c,
+            15px 10px 0 0 #e5e5e5,
+            20px 5px 0 0 #7c7c7c,
+            30px 5px 0 0 #e5e5e5,
+            30px 5px 0 0 #e5e5e5,
+            28px 10px 0 0 #e5e5e5,
+            22px 7px 0 0 #e5e5e5;
+
+
+    position: absolute;
+
+}
