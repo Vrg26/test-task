@@ -15,9 +15,11 @@ function App() {
 
   return (
       <ThemeContext.Provider value={({theme, toggleTheme})}>
-          <Header/>
-          <CalendarList/>
-          <Info/>
+          <div style={theme} className="App">
+              <Header/>
+              <CalendarList/>
+              <Info/>
+          </div>
       </ThemeContext.Provider>
   );
 }
