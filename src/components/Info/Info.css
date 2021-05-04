@@ -5,7 +5,7 @@
 
 .info__image {
     object-fit: cover;
-    width: 40%;
+    width: 100%;
 }
 
 .info__text-container {
@@ -40,6 +40,11 @@
     font-size: 18px;
     line-height: 26px;
     margin: 0;
+}
+@media screen and (max-width: 1200px){
+    .info__image {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 720px){
